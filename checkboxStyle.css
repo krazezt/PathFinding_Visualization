@@ -6,5 +6,7 @@
 }
 
 .big-check-box {
-    -fx-font: normal 12pt "sans-serif";
+    
+    -fx-font: bold 14pt "Times New Roman";
+    -fx-text-fill: #cc00cc;
 }

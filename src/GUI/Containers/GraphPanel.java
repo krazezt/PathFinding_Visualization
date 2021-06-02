@@ -73,7 +73,7 @@ public class GraphPanel extends Pane{
             int x = MouseInfo.getPointerInfo().getLocation().x - 50;
             int y = MouseInfo.getPointerInfo().getLocation().y - 50;
             dialog.setTitle("Input label");
-            dialog.setHeaderText("what label do you want to attach to this Node?");
+            dialog.setHeaderText("What label do you want to attach to this Node?");
             dialog.setContentText("Please enter the label here :");
             dialog.getEditor().clear();
 

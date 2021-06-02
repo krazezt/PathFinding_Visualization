@@ -10,7 +10,7 @@ import javafx.scene.control.CheckBox;
 
 public class AutoRunCheckBox extends CheckBox{
     public AutoRunCheckBox(int translateX, int translateY) {
-        super("Auto run ?");
+        super("Auto run");
 
         this.setTranslateX(translateX);
         this.setTranslateY(translateY);
