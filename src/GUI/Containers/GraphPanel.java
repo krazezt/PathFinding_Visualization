@@ -28,6 +28,8 @@ import java.awt.MouseInfo;
 public class GraphPanel extends Pane{
     public static boolean contextMenuShowable = true;
 
+    private final ContextMenu contextMenu;
+
     private List<EdgeLine> edges;
     private List<VertexFX> vertices; 
     private Graph graph;
@@ -43,6 +45,8 @@ public class GraphPanel extends Pane{
         setMinSize(width, height);
         setMaxSize(width, height);
         loadStylesheet(null);
+
+        contextMenu = new ContextMenu();
         setupContextMenu();
     }
 
@@ -64,8 +68,6 @@ public class GraphPanel extends Pane{
     }
 
     private void setupContextMenu() {
-        final ContextMenu contextMenu = new ContextMenu();
-        
         contextMenu.setAutoHide(true);
 
         MenuItem newVertex = new MenuItem("New node");
@@ -104,6 +106,10 @@ public class GraphPanel extends Pane{
 
             }
         });
+    }
+
+    public ContextMenu getContextMenu() {
+        return contextMenu;
     }
 
     public void addVertex(VertexFX v) {
