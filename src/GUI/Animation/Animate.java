@@ -383,6 +383,7 @@ public class Animate {
             @Override
             public void handle(ActionEvent event) {
                 resetButton.setVisible(false);
+                continueButton.setVisible(false);
 
                 graphview.Reset();
                 graphview.setDisable(false);
